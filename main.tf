@@ -1,8 +1,8 @@
-resource "aws_s3_bucket" "s3-bucket" {
-    bucket = "tfstate_file_bucket_001"
-    tags = {
-    Name        = "My_bucket"
+resource "aws_s3_bucket" "example" {
+  bucket = "ankit-tf-state-file"
+
+  tags = {
+    Name        = "My bucket"
     Environment = "Dev"
-  
-}
+  }
 }
